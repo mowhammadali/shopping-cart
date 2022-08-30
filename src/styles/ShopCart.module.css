@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0 100px;
+  margin-bottom: 50px;
+}
+@media screen and (max-width: 992px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+.container .carts {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 67%;
+}
+@media screen and (max-width: 992px) {
+  .container .carts {
+    width: 100%;
+  }
+}
+.container .actions {
+  width: 30%;
+}
+@media screen and (max-width: 992px) {
+  .container .actions {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .container .actions {
+    width: 100%;
+  }
+}
+
+.factor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 20px 40px;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  background-color: #fff;
+}
+.factor p:nth-child(2) {
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 400px) {
+  .factor p {
+    font-size: 12px;
+  }
+}
+.factor .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.factor .clear {
+  border: none;
+  background-color: #fff;
+  color: #229641;
+  cursor: pointer;
+  font-size: 18px;
+}
+@media screen and (max-width: 400px) {
+  .factor .clear {
+    font-size: 16px;
+  }
+}
+.factor .checkout {
+  width: 100px;
+  height: 32px;
+  font-weight: bold;
+  border: none;
+  background-color: #229641;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media screen and (max-width: 400px) {
+  .factor .checkout {
+    width: 80px;
+  }
+}
+
+.clearSection h3, .checkoutSection h3 {
+  color: #229641;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 400px) {
+  .clearSection h3, .checkoutSection h3 {
+    font-size: 16px;
+  }
+}
+.clearSection a, .checkoutSection a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  background-color: #0a74df;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+/*# sourceMappingURL=ShopCart.module.css.map */

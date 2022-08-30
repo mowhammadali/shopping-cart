@@ -1,0 +1,132 @@
+@import "variable";
+@import "mixin";
+
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-bottom: 50px;
+
+    @include media(992){
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    @include media(576){
+        padding: 0 40px;
+    }
+
+    @include media(400){
+        padding: 0 60px;
+    }
+
+    .carts{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 67%;
+
+        @include media(992){
+            width: 100%;
+        }
+    }
+
+    .actions{
+        width: 30%;
+
+        @include media(992){
+            width: 80%;
+        }
+
+        @include media(576){
+            width: 100%;
+        }
+    }
+
+}
+
+.factor{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px 20px 40px;
+    border: 1px solid $borderColor;
+    border-radius: 6px;
+    background-color: #fff;
+
+    p:nth-child(2){
+        margin-bottom: 30px;
+    }
+
+    p{
+        @include media(400){
+            font-size: 12px;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .clear{
+        border: none;
+        background-color: #fff;
+        color: $greenBtn;
+        cursor: pointer;
+        font-size: 18px;
+
+        @include media(400){
+            font-size: 16px;
+        }
+    }
+
+    .checkout{
+        width: 100px;
+        height: 32px;
+        font-weight: bold;
+        border: none;
+        background-color: $greenBtn;
+        color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+
+        @include media(400){
+            width: 80px;
+        }
+    }
+
+    
+}
+
+.clearSection{
+
+    h3{
+        color: $greenBtn;
+        margin-bottom: 40px;
+
+        @include media(400){
+            font-size: 16px;
+        }
+    }
+
+    a{
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        color: #fff;
+        background-color: $primaryColor;
+        padding: 5px 10px;
+        border-radius: 6px;
+    }
+}
+
+.checkoutSection{
+    @extend .clearSection;
+}
+

@@ -1,0 +1,42 @@
+@import "variable";
+@import "mixin";
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 100px;
+    margin-bottom: 80px;
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    right: 0;
+    box-shadow: 0 0 20px 0 #868686;
+
+    @include media(576){
+        padding: 15px 60px;
+    }
+
+    .goProduct{
+        font-size: 22px;
+        font-weight: bold;
+        color: $primaryColor;
+    }
+
+    .goShop{
+        display: flex;
+        position: relative;
+    }
+
+    span{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+        color: #fff;
+        background-color:#1c68b3;
+        border-radius: 50%;
+    }
+}

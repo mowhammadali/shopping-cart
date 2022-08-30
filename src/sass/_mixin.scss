@@ -1,0 +1,28 @@
+@mixin media($width) {
+
+    @if($width == 1200){
+        @media screen and (max-width: 1200px) {
+            @content;
+        }
+    }
+    @if($width == 992){
+        @media screen and (max-width: 992px) {
+            @content;
+        }
+    }
+    @if($width == 768){
+        @media screen and (max-width: 768px) {
+            @content;
+        }
+    }
+    @if($width == 576){
+        @media screen and (max-width: 576px) {
+            @content;
+        }
+    }
+    @if($width == 400){
+        @media screen and (max-width: 400px) {
+            @content;
+        }
+    }
+}

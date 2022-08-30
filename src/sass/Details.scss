@@ -1,0 +1,143 @@
+@import "variable";
+@import "mixin";
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px 100px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid $borderColor;
+    border-radius: 6px;
+
+    @include media(768){
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    @include media(576){
+        margin: 50px 60px;
+    }
+    @include media(400){
+        margin: 50px 40px;
+    }
+
+    img{
+        height: 400px;
+        width: 35%;
+
+        @include media(992){
+            width: 45%;
+        }
+
+        @include media(768){
+            width: 220px;
+            height: 250px;
+        }
+    }
+
+    .info{
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        border: 1px solid $borderColor;
+        border-radius: 6px;
+
+        @include media(992){
+            width: 50%;
+        }
+
+        @include media(768){
+            width: 90%;
+        }
+
+        @include media(576){
+            width: 100%;
+        }
+    }
+
+    h3{
+        color: $primaryColor;
+
+        @include media(576){
+            font-size: 15px;
+        }
+    }
+
+    .description{
+        text-align: left;
+
+        @include media(576){
+            font-size: 14px;
+        }
+    }
+
+    .category{
+        font-weight: bold;
+        color: #424242;
+        margin-bottom: 30px;
+
+        @include media(576){
+            font-size: 13px;
+        }
+    }
+
+    .buttons{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+        @include media(400){
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    .price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        height: 35px;
+        width: 80px;
+        color: #fff;
+        background-color: $greenBtn;
+        border-radius: 6px;
+
+        @include media(992){
+            width: 70px;
+        }
+
+        @include media(576){
+            font-size: 13px;
+        }
+    }
+
+    a{
+        width: 140px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+        background-color: $primaryColor;
+        border-radius: 6px;
+
+        @include media(992){
+            width: 120px;
+        }
+
+        @include media(576){
+            font-size: 13px;
+            width: 100px;
+        }
+    }
+}

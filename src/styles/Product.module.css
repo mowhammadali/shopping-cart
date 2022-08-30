@@ -1,0 +1,88 @@
+.container {
+  padding: 20px 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border: 1px solid #c4c4c4;
+  border-radius: 8px;
+}
+.container:hover {
+  box-shadow: 0px 0px 4px #525252;
+}
+.container .productImg {
+  height: 250px;
+  width: 220px;
+}
+@media screen and (max-width: 1200px) {
+  .container .productImg {
+    width: 218px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .productImg {
+    height: 290px;
+    width: 270px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .container .productImg {
+    height: 250px;
+    width: 220px;
+  }
+}
+.container h3 {
+  font-size: 20px;
+}
+.container .links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.container a {
+  color: #0a74df;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.buttons .addItem {
+  border: none;
+  border-radius: 6px;
+  height: 32px;
+  width: 120px;
+  font-size: 15px;
+  background-color: #0a74df;
+  color: #fff;
+  cursor: pointer;
+}
+.buttons .addItem:hover {
+  background-color: dodgerblue;
+}
+.buttons .increase, .buttons .decrease, .buttons .removeItem {
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  font-weight: bolder;
+  border: none;
+  border-radius: 4px;
+  background-color: #0a74df;
+  color: #fff;
+  cursor: pointer;
+}
+.buttons .increase:hover, .buttons .decrease:hover, .buttons .removeItem:hover {
+  background-color: dodgerblue;
+}
+.buttons .quantity {
+  font-weight: bolder;
+  color: dodgerblue;
+}
+
+/*# sourceMappingURL=Product.module.css.map */
